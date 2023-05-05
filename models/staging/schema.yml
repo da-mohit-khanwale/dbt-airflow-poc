@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: stg_enterprise_sales_delta
+
+sources:
+  - name: public
+    database: dev
+    schema: public
+    tables:
+      - name: enterprise_sales_delta

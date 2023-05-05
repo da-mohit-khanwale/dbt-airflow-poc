@@ -1,0 +1,111 @@
+with source as (
+    select * from {{ source('public', 'enterprise_sales_delta') }}
+),
+
+with columndrop as (
+    select Sub_BU
+    ,Standard_Division 
+    ,Division 
+    ,Standard_Name 
+    ,Product 
+    ,Standard_Product 
+    ,GM 
+    ,AD_Sales_Rep 
+    ,Jan_22 
+    ,Feb_22 
+    ,Mar_22 
+    ,Apr_22 
+    ,May_22 
+    ,Jun_22 
+    ,Jul_22 
+    ,Aug_22 
+    ,Sep_22 
+    ,Oct_22 
+    ,Nov_22 
+    ,Dec_22 
+    ,Jan_6_6
+    ,Feb_6_6
+    ,Mar_6_6
+    ,Apr_6_6
+    ,May_6_6
+    ,Jun_6_6
+    ,Jul_6_6
+    ,Aug_6_6
+    ,Sep_6_6
+    ,Oct_6_6
+    ,Nov_6_6
+    ,Dec_6_6
+    ,Jan_4_8
+    ,Feb_4_8
+    ,Mar_4_8
+    ,Apr_4_8
+    ,May_4_8
+    ,Jun_4_8
+    ,Jul_4_8
+    ,Aug_4_8
+    ,Sep_4_8
+    ,Oct_4_8
+    ,Nov_4_8
+    ,Dec_4_8
+    ,Jan_22_Bgt 
+    ,Feb_22_Bgt 
+    ,Mar_22_Bgt 
+    ,Apr_22_Bgt 
+    ,May_22_Bgt 
+    ,Jun_22_Bgt 
+    ,Jul_22_Bgt 
+    ,Aug_22_Bgt 
+    ,Sep_22_Bgt 
+    ,Oct_22_Bgt 
+    ,Nov_22_Bgt 
+    ,Dec_22_Bgt 
+    ,Jan_21 
+    ,Feb_21 
+    ,Mar_21 
+    ,Apr_21 
+    ,May_21 
+    ,Jun_21 
+    ,Jul_21 
+    ,Aug_21 
+    ,Sep_21 
+    ,Oct_21 
+    ,Nov_21 
+    ,Dec_21 
+    ,CM_Actual 
+    ,CM_6_6
+    ,CM_4_8
+    ,CM_Budget 
+    ,CM_PY 
+    ,CM_vs_6_6 
+    ,CM_vs_4_8 
+    ,CM_vs_Budget 
+    ,CM_vs_PY 
+    ,YTD_Actual 
+    ,YTD_6_6 
+    ,YTD_4_8 
+    ,YTD_Budget 
+    ,YTD_PY 
+    ,YTD_vs_6_6 
+    ,YTD_vs_4_8 
+    ,YTD_vs_Budget 
+    ,YTD_vs_PY 
+    ,FY_Fcst 
+    ,FY_6_6 
+    ,FY_4_8 
+    ,FY_Budget 
+    ,FY_PY 
+    ,FY_vs_6_6 
+    ,FY_vs_4_8 
+    ,FY_vs_Budget 
+    ,FY_vs_PY 
+    ,FY_Category 
+    ,FY_Budget_Category 
+    ,YTD_Category 
+    ,YTD_Budget_Category 
+    ,CM_Category___4_8 
+    ,CM_Category___Budget 
+    ,Budget___CM 
+    from source
+)
+
+select * from columndrop
