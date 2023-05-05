@@ -3,7 +3,7 @@ dbt_airflow_project:
     dev:
       cluster_id: da-rs-01
       dbname: dev
-      host: da-rs-01.c9guzayxgh22.us-east-1.redshift.amazonaws.com:5439/dev
+      host: da-rs-01.c9guzayxgh22.us-east-1.redshift.amazonaws.com
       password: L844X7lB3f9A
       port: 5439
       schema: public
